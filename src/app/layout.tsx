@@ -1,8 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat, Fraunces } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["500", "700"],
+  variable: "--montserrat",
+});
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  weight: "700",
+  variable: "--fraunces",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${montserrat.variable} ${fraunces.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
