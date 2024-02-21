@@ -5,7 +5,7 @@ import Link from "next/link";
 const Page: NextPage = () => {
   return (
     <section className=" h-svh sm:h-screen bg-cream-500 grid place-items-center">
-      <main className=" w-10/12  sm:p-0 sm:w-[600px] bg-white rounded-lg  shadow-lg shadow-cream-400 overflow-hidden sm:flex font-montserrat">
+      <main className=" w-10/12  sm:p-0 sm:w-[600px] bg-white rounded-lg overflow-hidden sm:flex font-montserrat">
         {/*desk view : Image */}
         <div className="relative sm:w-1/2 min-h-60 w-full sm:min-h-96">
           <Image src={"/desk.jpg"} fill alt="" className="hidden sm:block" />
