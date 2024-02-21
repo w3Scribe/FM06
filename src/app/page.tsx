@@ -12,7 +12,7 @@ const Page: NextPage = () => {
           <Image src={"/mob.jpg"} fill alt="" className="block sm:hidden" />
         </div>
         <div className="sm:p-8 sm:w-1/2 my-2 p-5">
-          <h3 className="tracking-widest text-darkCyan-600 uppercase">
+          <h3 className=" tracking-[0.2em] text-darkCyan-600 uppercase">
             Ferfume
           </h3>
           <h1 className=" text-darkBlue-500 text-2xl font-bold my-3 font-fraunces">
